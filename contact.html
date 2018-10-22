@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("assets/images/background.png");
+        }
+
+        .entirepage {
+            display: grid;
+            grid-template-rows: 92px 1fr auto;
+            grid-template-columns: auto;
+            grid-template-areas:
+                "top"
+                "middle"
+                "bottom";
+            min-height: 100vh;
+
+        }
+
+        .headergrid {
+            grid-area: top;
+            background-color: #ffffff;
+            display: grid;
+            grid-template-columns: auto 960px auto;
+            grid-template-rows: 90px;
+            border-bottom: solid #cccccc;
+            border-width: 2px;
+            height: 90px;
+            grid-template-areas:
+                "headleft headcenter headright"
+        }
+
+        .contentgrid {
+            grid-area: middle;
+            display: grid;
+            margin-top: 36px;
+            margin-bottom: 30px;
+            grid-template-columns: auto 960px auto;
+            grid-template-rows: max-content;
+            grid-template-areas:
+                "left concenter right"
+        }
+
+        .footergrid {
+            grid-area: bottom;
+            width: 100%;
+            background-color: #666666;
+            height: 58px;
+            text-align: center;
+            color: #c1c1c1;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            border-top: solid #4aaaa5;
+            border-width: 6px;
+            line-height: 90px;
+        }
+
+        .headercontent {
+            grid-area: headcenter;
+            display: grid;
+            grid-template-columns: 288px auto 273px;
+            grid-template-rows: 90px;
+            grid-template-areas:
+                "headconleft headconcenter headconright"
+        }
+
+        .logo {
+            background-color: #4aaaa5;
+            grid-area: headconleft;
+            line-height: 90px;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            font-size: 32px;
+            height: 90px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .navarea {
+            display: grid;
+            grid-area: headconright;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 30px;
+            text-align: center;
+            margin-top: 30px;
+            line-height: 30px;
+            color: #777777;
+            height: 30px;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            grid-template-areas:
+                "navleft navcenter navright"
+        }
+
+        .navabout {
+            grid-area: navleft;
+            border: none;
+            border-right: solid 2px;
+            border-color: #f2f2f2;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            text-decoration: inherit;
+            color: inherit;
+        }
+        .navcontact {
+            grid-area: navcenter;
+            border: none;
+            border-right: solid 2px;
+            border-color: #f2f2f2;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            user-select: none;
+            outline-style: none;
+            
+        }
+        .navportfolio {
+            grid-area: navright;
+            border: none;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            user-select: none;
+            outline-style: none;
+        }
+
+
+        .hover:hover {
+            color: #777777;
+            text-shadow: 0 0 1px black;
+        }
+
+        .contentheader {
+            color: #4aaaa5;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            font-size: 32px;
+            border-bottom: solid #cccccc;
+            border-width: 2px;
+            padding-bottom: 30px;
+
+        }
+
+        .contentmiddle {
+            background-color: white;
+            grid-area: concenter;
+            border: solid #cccccc;
+            border-width: 2px;
+            padding: 30px;
+
+        }
+        .name {
+            color: #777777;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
+
+        #headshot {
+            float: left;
+            margin-bottom: 30px;
+            margin-right: 30px;
+
+        }
+
+        #rawtext {
+            line-height: 30px;
+            color: #777777;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entirepage">
+        <header class="headergrid">
+            <div class="headercontent">
+                <div class="logo">Luke McCray</div>
+                <div class="navarea">
+                    <a href="index.html" class="hover navabout">About</a>
+                    <a href="contact.html" class="hover navcontact">Contact</a>
+                    <a class="hover navportfolio">Portfolio</a>
+                </div>
+            </div>
+        </header>
+        <section class="contentgrid">
+            <div class="contentmiddle">
+                <h1 class="contentheader">Contact</h1>
+                <form class="name">
+                        Name<br>
+                        <input type="text" name="name"><br>
+                        Email<br>
+                        <input type="text" name="email">
+                      </form>
+
+            </div>
+
+        </section>
+        <footer class="footergrid">Copyright &#169;</footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
