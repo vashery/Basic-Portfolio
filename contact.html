@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>Contact</title>
     <style>
         body {
             margin: 0;
@@ -111,16 +111,16 @@
             border-right: solid 2px;
             border-color: #f2f2f2;
             font-family: 'Georgia', Times, Times New Roman, serif;
-            user-select: none;
-            outline-style: none;
+            text-decoration: inherit;
+            color: inherit;
             
         }
         .navportfolio {
             grid-area: navright;
             border: none;
             font-family: 'Georgia', Times, Times New Roman, serif;
-            user-select: none;
-            outline-style: none;
+            text-decoration: inherit;
+            color: inherit;
         }
 
 
@@ -145,6 +145,7 @@
             border: solid #cccccc;
             border-width: 2px;
             padding: 30px;
+            font-family: 'Georgia', Times, Times New Roman, serif;
 
         }
         .name {
@@ -163,6 +164,37 @@
             line-height: 30px;
             color: #777777;
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        .inputfield {
+            width: 100%;
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 0px;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            font-size: 15px;
+            color: inherit;
+            padding-left: 10px;
+        }
+        .inputmessage {
+            height: 196px;
+        }
+        .submitbutton {
+            background-color: #4aaaa5;
+            height: 41px;
+            width: 116px;
+            border: none;
+            text-decoration: none;
+            font: inherit;
+            color: white;
+            
+            border: none;
+            padding: 0;
+            
+            cursor: pointer;
+            outline: inherit;
+            
+
         }
     </style>
 </head>
@@ -183,11 +215,14 @@
             <div class="contentmiddle">
                 <h1 class="contentheader">Contact</h1>
                 <form class="name">
-                        Name<br>
-                        <input type="text" name="name"><br>
-                        Email<br>
-                        <input type="text" name="email">
-                      </form>
+                    Name<br>
+                    <input class="inputfield" type="text" name="name"><br>
+                    Email<br>
+                    <input class="inputfield" type="text" name="email"><br>
+                    Message<br>
+                    <input class="inputfield inputmessage" type="text" name="message">
+                    <button class="submitbutton">Submit</button>
+                </form>
 
             </div>
 
