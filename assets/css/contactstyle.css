@@ -1,12 +1,4 @@
-        .contentmiddle {
-            background-color: white;
-            grid-area: concenter;
-            border: solid #cccccc;
-            border-width: 2px;
-            padding: 30px;
-            font-family: 'Georgia', Times, Times New Roman, serif;
 
-        }
         .name {
             color: #777777;
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -40,11 +32,9 @@
             border: none;
             text-decoration: none;
             font: inherit;
-            color: white;
-            
+            color: #ffffff;
             border: none;
             padding: 0;
-            
             cursor: pointer;
             outline: inherit;
             

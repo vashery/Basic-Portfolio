@@ -1,12 +1,4 @@
-.contentmiddle {
-    background-color: white;
-    grid-area: concenter;
-    border: solid #cccccc;
-    border-width: 2px;
-    padding: 30px;
 
-
-}
 
 .contenttilegrid {
     display: grid;

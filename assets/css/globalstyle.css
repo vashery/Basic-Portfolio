@@ -43,7 +43,6 @@ body {
     line-height: 90px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 30px;
-    height: 90px;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -115,6 +114,14 @@ body {
     border-width: 2px;
     padding-bottom: 30px;
     margin-top: 9px;
+
+}
+.contentmiddle {
+    background-color: #ffffff;
+    grid-area: concenter;
+    border: solid #cccccc;
+    border-width: 2px;
+    padding: 30px;
 
 }
 
