@@ -1,5 +1,3 @@
-
-
         .contentmiddle {
             background-color: white;
             grid-area: concenter;
@@ -12,6 +10,7 @@
         .name {
             color: #777777;
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            font-size: 19px;
         }
 
         #rawtext {
@@ -24,7 +23,7 @@
             height: 30px;
             margin-top: 10px;
             margin-bottom: 20px;
-            line-height: 0px;
+            line-height: initial;
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
             font-size: 15px;
             color: inherit;
@@ -32,6 +31,7 @@
         }
         .inputmessage {
             height: 196px;
+            padding-top: 10px;
         }
         .submitbutton {
             background-color: #4aaaa5;
